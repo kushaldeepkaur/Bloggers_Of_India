@@ -1,0 +1,232 @@
+body
+{
+  background-color: #9E9E9E;
+}
+.navbar
+{
+  font-size: 1.3em;
+  min-height: 4em;
+  border-radius: 0;
+  border: none;
+  background-color: #F4511E;
+  margin-bottom: 0;
+}
+/*For logo Bloggers_Of_India*/
+.navbar-brand a
+{
+  font-family: comic sans ms, arial black, georgia;
+  font-weight: bolder;
+  color: black;
+  text-decoration: none;
+  position: absolute; /*Its added to resolve vertical margin collapse with the parent element*/
+  margin-top: 0.5em;
+}
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:hover,.navbar-inverse .navbar-nav .active a:focus
+{
+  font-weight: bolder;
+  background-color: #E64A19;
+  color: white;
+}
+.navbar-inverse .navbar-nav .active a:hover,.navbar-inverse .navbar-nav .active a:focus
+{
+  font-weight: bolder;
+  color: black;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus
+{
+  background-color: #E64A19;
+}
+/*Right aligned nav items*/
+.navbar-inverse .navbar-nav li a{
+  margin: 0.5em 0 0.5em 0;
+  font-weight: bold;
+  color: black;
+}
+.navbar-inverse .navbar-nav li a:hover
+{
+  font-weight: bolder;
+  background-color: #E64A19;
+  color: white;
+}
+/*carousel*/
+.carousel-caption
+{
+    font-size: 1.5em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/*images*/
+#logo .col-sm-3 img
+{
+    margin: 2em 2em 2em 2em;
+    height:15em;
+    width:15em;
+}
+#logo .col-sm-3
+{
+  margin-bottom: 2em;
+}
+/*footer elements*/
+#contact
+{
+    margin-top: 2em;
+}
+#social li
+{
+  list-style: none;
+  float: right;
+}
+#social li .fa
+{
+  list-style: none;
+
+  font-size: 2em;
+  margin: 0.5em;
+  margin-top: 2.5em;
+  margin-bottom: 0.1em;
+}
+#social li a:hover .fa
+{
+  color:  #000000;
+}
+#social li .fa-google-plus-square
+{
+  color: #FF5722;
+}
+#social li .fa-twitter-square
+{
+  color: #0288D1;
+}
+#social li .fa-facebook-square
+{
+  color: blue;
+}
+#social li .fa-instagram
+{
+  color: #FFC107;
+}
+#social li .fa-youtube-square
+{
+  color: #F44336;
+}
+#social h3
+{
+  clear:right;
+  float: right;
+  margin-right: 0;
+  padding: 0.5em;
+}
+footer
+{
+  width: 100%;
+  min-height: 10%;
+  background-color: #E0F7FA;
+}
+/*media querries*/
+
+  /*navbar*/
+  @media  only screen and (max-width: 768px)
+  {
+    .navbar-inverse .navbar-toggle
+    {
+      margin-top: 1.2em;
+      margin-bottom: 1.2em;
+    }
+  }
+  @media  only screen and (max-width:879px) and (min-width: 768px)
+  {
+    .navbar-inverse #CollapseIcon li
+    {
+      margin-top: 3em;
+    }
+    .navbar-brand a
+    {
+      position: absolute;
+      margin: 0.5em 15em 0.5em 15em;
+      text-align: center;
+    }
+  }
+  /*carousel*/
+  @media  only screen and (max-width: 470px)
+  {
+      .carousel-caption
+      {
+        display: none;
+      }
+  }
+  /*images*/
+  @media  only screen and (min-width: 266px) and (max-width:370px)
+  {
+    #logo .col-sm-3 img
+    {
+    display: block;
+    margin:auto;
+    float :none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: 10em;
+    width:10em;
+    }
+    #logo .col-sm-3 h3
+    {
+      font-size: 1.5em;
+    }
+  }
+    @media  only screen and (min-width: 371px ) and (max-width:600px)
+    {
+      #logo .col-sm-3 img
+      {
+        display: block;
+        margin:auto;
+        float :none;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        height: 15em;
+        width:15em;
+      }
+  }
+  @media  only screen and (min-width: 600px ) and (max-width:767px)
+  {
+    #logo .col-sm-3 img
+    {
+      display: block;
+      margin:auto;
+      float :none;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      height: 17em;
+      width:20em;
+    }
+  }
+  @media  only screen and (min-width: 768px ) and (max-width:991px)
+  {
+      #logo .col-sm-3 img
+      {
+          margin: 2em 2em 1em 2em;
+          height:10em;
+          width:10em;
+      }
+  }
+  /*footer*/
+  @media  only screen and (min-width: 266px) and (max-width: 370px)
+  {
+       #contact
+      {
+        text-align: center;
+      }
+      #social
+      {
+        display: none;
+      }
+  }
+  @media only screen and (min-width: 370px) and (max-width: 768px)
+  {
+    #contact
+   {
+     text-align: center;
+   }
+   #social
+   {
+     display: none;
+   }
+  }
